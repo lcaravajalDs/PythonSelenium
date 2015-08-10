@@ -9,8 +9,6 @@ class BaseTest(unittest.TestCase):
                 self.driver.implicitly_wait(10)
                 self.driver.get("http://www.python.org")
         
-    def test_lala(self):
-        print ('lala')
 
     def tearDown(self):
         self.driver.close()
