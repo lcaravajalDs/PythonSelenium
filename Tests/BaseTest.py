@@ -2,10 +2,10 @@ import unittest
 
 #from Config.ConfigParser import parser
 from selenium import webdriver
-
-
+from Config.ConfigParser import parser
 
 class BaseTest(unittest.TestCase):
+   configfile=parser()
     def setUp(self):
         self.driver=webdriver.Firefox()
         self.driver.implicitly_wait(10)
