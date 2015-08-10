@@ -1,7 +1,7 @@
 import unittest
 
 from Config.ConfigParser import parser
-
+from selenium import webdriver
 
 class BaseTest(unittest.TestCase):
     configfile=parser()
