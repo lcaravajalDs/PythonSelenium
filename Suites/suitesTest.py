@@ -1,5 +1,5 @@
 import unittest
-from AnotherTest import AnotherTest
+from Tests.AnotherTest import AnotherTest
 loader=unittest.defaultTestLoader
 suiteToRun=loader.loadTestsFromTestCase(AnotherTest)
 runner=unittest.TextTestRunner(verbosity=0)
