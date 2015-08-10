@@ -2,8 +2,9 @@ import unittest
 
 from Config.ConfigParser import parser
 from selenium import webdriver
-from MainPage import MainPage
 from Page.SearchResultsPage import SearchResultsPage
+from Page.MainPage import MainPage
+
 
 
 class BaseTest(unittest.TestCase):
