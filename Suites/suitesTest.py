@@ -1,7 +1,7 @@
 import unittest
-from Tests.AnotherTest import AnotherTest
+from Tests.test_PythonTestRun import PythonOrgSearch
 loader=unittest.defaultTestLoader
-suiteToRun=loader.loadTestsFromTestCase(AnotherTest)
+suiteToRun=loader.loadTestsFromTestCase(PythonOrgSearch)
 runner=unittest.TextTestRunner(verbosity=0)
 result=runner.run(suiteToRun)
 
