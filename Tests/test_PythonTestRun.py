@@ -12,12 +12,3 @@ class PythonOrgSearch(BaseTest):
         main_page.click_go_button()
         search_results_page = SearchResultsPage(self.driver)
         assert search_results_page.is_results_found(), "No results found."
-        
-    
-def suite():
-
-    suite = unittest.TestSuite()
-
-    suite.addTest (PythonOrgSearch())
-
-    return suite
