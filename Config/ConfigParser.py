@@ -1,13 +1,13 @@
 import configparser
 
 from selenium import webdriver
-import os
 
 class parser():
     config= configparser.ConfigParser()
     
     def __init__(self):
-        root_dir = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]
+        #root_dir = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]
+        root_dir="C:\Python34\lib\site-packages"
         print (root_dir)
         self.config.read(root_dir+"//Config//config.ini")
         print(self.config.sections())
