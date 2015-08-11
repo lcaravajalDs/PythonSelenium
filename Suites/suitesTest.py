@@ -1,21 +1,11 @@
 import unittest
 from Tests.test_PythonTestRun import PythonOrgSearch
-import datetime
-current_time = datetime.datetime.now().time()
-print (current_time.isoformat())
 print ("Starting Suite")
 loader=unittest.defaultTestLoader
-current_time = datetime.datetime.now().time()
-print (current_time.isoformat())
 suiteToRun=loader.loadTestsFromTestCase(PythonOrgSearch)
-current_time = datetime.datetime.now().time()
-print (current_time.isoformat())
 runner=unittest.TextTestRunner(verbosity=2)
-current_time = datetime.datetime.now().time()
-print (current_time.isoformat())
 result=runner.run(suiteToRun)
-current_time = datetime.datetime.now().time()
-print (current_time.isoformat())
+
 print ('')
 print ("---- START OF TEST RESULTS")
 print (result)
