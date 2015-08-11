@@ -5,8 +5,6 @@ from Config.ConfigParser import parser
 import datetime
 
 class BaseTest(unittest.TestCase):
-    current_time = datetime.datetime.now().time()
-    print (current_time.isoformat())
     configfile=parser()
     def setUp(self):
         current_time = datetime.datetime.now().time()
