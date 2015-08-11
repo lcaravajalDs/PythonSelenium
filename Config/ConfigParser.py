@@ -8,6 +8,7 @@ class parser():
     
     def __init__(self):
         root_dir = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]
+        print (root_dir)
         self.config.read(root_dir+"//config.ini")
         print(self.config.sections())
         
