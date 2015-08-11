@@ -15,6 +15,7 @@ Python.egg-info/top_level.txt
 Suites/__init__.py
 Suites/runsuite.py
 Suites/suitesTest.py
+Tests/AnotherTest.py
 Tests/BaseTest.py
 Tests/__init__.py
 Tests/test_PythonTestRun.py
