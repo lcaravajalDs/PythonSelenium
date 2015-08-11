@@ -1,4 +1,3 @@
-import unittest
 from Tests.BaseTest import BaseTest
 from Page.SearchResultsPage import SearchResultsPage
 from Page.MainPage import MainPage
