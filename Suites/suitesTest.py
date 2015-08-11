@@ -1,5 +1,6 @@
 import unittest
 from Tests.test_PythonTestRun import PythonOrgSearch
+print ("Starting Suite")
 loader=unittest.defaultTestLoader
 suiteToRun=loader.loadTestsFromTestCase(PythonOrgSearch)
 runner=unittest.TextTestRunner(verbosity=0)
