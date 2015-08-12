@@ -14,7 +14,7 @@ class parser():
         browser=self.config.get("Browser", param)
         print("Opening "+browser)
         if browser == 'Chrome' :
-            return webdriver.Chrome()
+            return webdriver.Chrome('c://Python34//chromedriver')
         elif browser == 'FF':
             return webdriver.Firefox()
         elif browser == 'IE':
