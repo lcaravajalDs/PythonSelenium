@@ -25,3 +25,7 @@ class parser():
         env=self.config.get("Env", SUT)
         print("Navigating to "+env)
         return env
+    
+    def get_first_browser(self):
+        return self.getBrowser('1')
+        
