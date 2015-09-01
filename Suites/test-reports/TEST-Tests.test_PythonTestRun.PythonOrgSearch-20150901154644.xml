@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="Tests.test_PythonTestRun.PythonOrgSearch-20150901154644" tests="1" time="43.548">
+	<properties/>
+	<system-out>
+<![CDATA[Opening FF
+Navigating to http://www.python.com
+Set value by name : q
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+	<testcase classname="Tests.test_PythonTestRun.PythonOrgSearch" name="test_search_in_python_org" time="43.548">
+		<error message="Message: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;q&quot;}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///C:/Users/Luciano/AppData/Local/Temp/tmp1diz2q_6/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///C:/Users/Luciano/AppData/Local/Temp/tmp1diz2q_6/extensions/fxdriver@googlecode.com/components/driver-component.js:623)" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Luciano\workspace\PythonSelenium\Tests\test_PythonTestRun.py", line 10, in test_search_in_python_org
+    main_page.search_field="pycon"
+  File "C:\Users\Luciano\workspace\PythonSelenium\Elements\element.py", line 5, in __set__
+    obj.driver.find_element(*self.locator).send_keys(value)
+  File "C:\Python34\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 707, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python34\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 196, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python34\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 181, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: {"method":"name","selector":"q"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///C:/Users/Luciano/AppData/Local/Temp/tmp1diz2q_6/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///C:/Users/Luciano/AppData/Local/Temp/tmp1diz2q_6/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+
+Stdout:
+Opening FF
+Navigating to http://www.python.com
+Set value by name : q
+]]>		</error>
+	</testcase>
+</testsuite>
