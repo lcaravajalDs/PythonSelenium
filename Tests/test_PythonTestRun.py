@@ -10,4 +10,4 @@ class PythonOrgSearch(BaseTest):
         main_page.search_field="pycon"
         main_page.click_go_button()
         search_results_page = SearchResultsPage(self.driver)
-        assert search_results_page.is_results_found(), "No resulxxxxx found."
+        assert search_results_page.is_results_found()
