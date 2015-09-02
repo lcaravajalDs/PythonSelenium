@@ -15,5 +15,5 @@ class AnotherTest(BaseTest):
         main_page.search_field="#invalid@search*"
         main_page.click_go_button()
         search_results_page = SearchResultsPage(self.driver)
-        assert -(search_results_page.is_results_found())
+        assert search_results_page.is_results_found()
 
