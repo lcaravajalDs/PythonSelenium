@@ -1,7 +1,7 @@
 import unittest
 from Tests.test_PythonTestRun import PythonOrgSearch
+from Tests.AnotherTest import AnotherTest
 import sys
-from AnotherTest import AnotherTest
 loader=unittest.defaultTestLoader
 suiteToRun= unittest.TestSuite([loader.loadTestsFromTestCase(PythonOrgSearch),
                                 loader.loadTestsFromTestCase(AnotherTest)
