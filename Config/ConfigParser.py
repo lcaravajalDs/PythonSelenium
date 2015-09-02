@@ -5,10 +5,10 @@ import os
 
 class parser():
     config= configparser.ConfigParser()
+    root_dir = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]+"//Config//config.ini"
     
     def __init__(self):
-        root_dir = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]
-        self.config.read(root_dir+"//Config//config.ini")
+        self.config.read(self.root_dir)
         
     def getBrowser(self,param):
         browser=self.config.get("Browser", param)
@@ -28,4 +28,12 @@ class parser():
     
     def get_first_browser(self):
         return self.getBrowser('1')
+    
+    def setConfig(self,section,opt,value):
+        self.config.set(section, opt, value)
+    
+    def saveConfigFile(self):
+        with open(self.root_dir, 'w') as configfile:    # save
+            self.config.write(configfile)
+    
         
