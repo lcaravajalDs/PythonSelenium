@@ -11,7 +11,7 @@ xml_msg = ""
 try:
     import xmlrunner
     xml_dir = 'test-reports'
-    res = xmlrunner.XMLTestRunner(output=xml_dir, verbosity=1).run(suiteToRun)
+    res = xmlrunner.XMLTestRunner(output=xml_dir, verbosity=2).run(suiteToRun)
     xml_msg = ", XML output of tests available in %s directory" % xml_dir
 except :
     sys.stderr.write("WARNING: xmlrunner module not available, falling back to using unittest...\n\n")
