@@ -1,7 +1,7 @@
 class BasePageElement(object):
 
     def __set__(self, obj, value):
-        print("Set value by", self.locator[0],":",self.locator[1])
+        print("Set value " +value+ " by", self.locator[0],":",self.locator[1])
         obj.driver.find_element(*self.locator).send_keys(value)
 
     def __get__(self, obj, owner):

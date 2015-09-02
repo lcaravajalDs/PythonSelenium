@@ -1,11 +1,11 @@
 import unittest
 from Tests.test_PythonTestRun import PythonOrgSearch
 import sys
+from AnotherTest import AnotherTest
 loader=unittest.defaultTestLoader
-suiteToRun=loader.loadTestsFromTestCase(PythonOrgSearch)
-#runner=unittest.TextTestRunner(verbosity=2)
-#result=runner.run(suiteToRun)
-
+suiteToRun= unittest.TestSuite([loader.loadTestsFromTestCase(PythonOrgSearch),
+                                loader.loadTestsFromTestCase(AnotherTest)
+                                ])
 xml_msg = ""
 try:
     import xmlrunner
@@ -15,36 +15,3 @@ try:
 except :
     sys.stderr.write("WARNING: xmlrunner module not available, falling back to using unittest...\n\n")
     res = unittest.TextTestRunner().run(suiteToRun)
-
-"""
-print ('')
-print ("---- START OF TEST RESULTS")
-print (result)
-print ('')
-print ('')
-print ('')
-print ("result::errors")
-print (result.errors)
-print ('')
-print ('')
-print ('')
-print ("result::failures")
-print (result.failures)
-print ('')
-print ('')
-print ('')
-print ("result::skipped")
-print (result.skipped)
-print ('')
-print ('')
-print ('')
-print ("result::successful")
-print (result.wasSuccessful())
-print ('')
-print ('')
-print ('')
-print ("result::test-run")
-print (result.testsRun)
-print ("---- END OF TEST RESULTS")
-print ('') 
-"""
