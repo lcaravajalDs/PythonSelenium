@@ -3,9 +3,11 @@ from Tests.test_PythonTestRun import PythonOrgSearch
 from Tests.AnotherTest import AnotherTest
 import sys
 loader=unittest.defaultTestLoader
+suiteToRun=unittest.TestSuite()
 suiteToRun= unittest.TestSuite([loader.loadTestsFromTestCase(PythonOrgSearch),
                                 loader.loadTestsFromTestCase(AnotherTest)
                                 ])
+
 xml_msg = ""
 try:
     import xmlrunner
